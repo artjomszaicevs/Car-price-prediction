@@ -10,7 +10,7 @@ path = os.path.expanduser('~/airflow_hw')
 
 # Add the project code path to the environment variable so it's accessible to the Python process
 os.environ['PROJECT_PATH'] = path
-# Добавим путь к коду проекта в $PATH, чтобы импортировать функции
+# Add the project code path to $PATH to enable function imports
 sys.path.insert(0, path)
 
 from modules.pipeline import pipeline
